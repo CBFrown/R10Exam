@@ -23,7 +23,7 @@ class LaKasa extends StatefulWidget {
 
 class _LaKasaEstado extends State<LaKasa> {
 
-  List students = [
+  List laPam = [
     {'name': 'Judith Baal'},
     {'name': 'Johnas Baal'},
     {'name': 'Clark Anthony Baal'},
@@ -42,9 +42,9 @@ class _LaKasaEstado extends State<LaKasa> {
           itemCount: students.length,
           itemBuilder: (context, index) {
             return ListTile(
-              title: Text(students[index]['name']),
+              title: Text(laPam[index]['name']),
               leading: Icon(Icons.ad_units),
-              subtitle: Text("${((students[index]['name'])).length - ' '.allMatches((students[index]['name'])).length}"),
+              subtitle: Text("${((laPam[index]['name'])).length - ' '.allMatches((laPam[index]['name'])).length}"),
             );
           }
       )
