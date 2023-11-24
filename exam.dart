@@ -39,7 +39,7 @@ class _LaKasaEstado extends State<LaKasa> {
         backgroundColor: Colors.teal
       ),
       body: ListView.builder(
-          itemCount: students.length,
+          itemCount: laPam.length,
           itemBuilder: (context, index) {
             return ListTile(
               title: Text(laPam[index]['name']),
